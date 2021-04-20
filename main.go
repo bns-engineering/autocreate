@@ -2,13 +2,11 @@
 package main
 
 import (
-	"autocreatecifaccount/common/logging"
-
+	"autocreate/common/config"
+	"autocreate/common/logging"
 	"fmt"
 	"os"
 	"time"
-
-	"autocreatecifaccount/common/config"
 )
 
 var f *os.File

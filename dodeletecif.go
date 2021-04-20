@@ -1,9 +1,9 @@
 package main
 
 import (
-	"autocreatecifaccount/common/config"
-	"autocreatecifaccount/common/helper"
-	"autocreatecifaccount/util"
+	"autocreate/common/config"
+	"autocreate/common/helper"
+	"autocreate/util"
 	"bytes"
 	"encoding/json"
 	"fmt"

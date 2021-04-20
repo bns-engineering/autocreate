@@ -1,4 +1,4 @@
-module github.com/bns-engineering/autocreatecifaccount
+module github.com/bns-engineering/autocreate
 
 go 1.15
 
