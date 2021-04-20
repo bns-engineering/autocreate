@@ -1,10 +1,10 @@
 package main
 
 import (
+	"autocreatecifaccount/common/config"
+	"autocreatecifaccount/common/helper"
+	"autocreatecifaccount/util"
 	"bytes"
-	"deleteclientlisted/common/config"
-	"deleteclientlisted/common/helper"
-	"deleteclientlisted/util"
 	"encoding/json"
 	"fmt"
 	"net/http"

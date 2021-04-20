@@ -2,13 +2,13 @@
 package main
 
 import (
-	"deleteclientlisted/common/logging"
+	"autocreatecifaccount/common/logging"
 
 	"fmt"
 	"os"
 	"time"
 
-	"deleteclientlisted/common/config"
+	"autocreatecifaccount/common/config"
 )
 
 var f *os.File
