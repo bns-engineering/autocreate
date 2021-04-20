@@ -1,15 +1,16 @@
 package main
 
 import (
-	"autocreate/common/config"
-	"autocreate/common/helper"
-	"autocreate/util"
 	"bytes"
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"os"
 	"time"
+
+	"github.com/bns-engineering/autocreate/common/config"
+	"github.com/bns-engineering/autocreate/common/helper"
+	"github.com/bns-engineering/autocreate/util"
 )
 
 func Dodelete(filestrDate string) {

@@ -2,11 +2,12 @@
 package main
 
 import (
-	"autocreate/common/config"
-	"autocreate/common/logging"
 	"fmt"
 	"os"
 	"time"
+
+	"github.com/bns-engineering/autocreate/common/config"
+	"github.com/bns-engineering/autocreate/common/logging"
 )
 
 var f *os.File
