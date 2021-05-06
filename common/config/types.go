@@ -2,9 +2,12 @@ package config
 
 //Configuration Struct
 type Configuration struct {
-	Debug   bool
-	Mambu   Mambu
-	Clients []Client
+	Debug        bool
+	Mambu        Mambu
+	Start        int
+	Until        int
+	ValueDate    string
+	MaturityDate string
 }
 
 //Mambu Struct

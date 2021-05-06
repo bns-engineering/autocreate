@@ -3,10 +3,12 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
+	"os/signal"
+	"syscall"
 	"time"
 
-	"github.com/bns-engineering/autocreate/common/config"
 	"github.com/bns-engineering/autocreate/common/logging"
 )
 
@@ -48,15 +50,19 @@ func main() {
 		// log.Fatal(err)
 		fmt.Println(err)
 	}
-	Appcfg := config.LoadConfig()
-	if Appcfg.Clients != nil {
-		// DoGetClients(filestrDate)
-		// DoGetClientsProd(filestrDate)
-		Dodelete(filestrDate)
-	} else {
-		fmt.Println("Clients Null")
-	}
 
-	fmt.Println(">> Finish.")
-	fmt.Println()
+	// DoGetClients(filestrDate)
+	// DoGetClientsProd(filestrDate)
+	DoCreate(filestrDate)
+	// DoUpdate(filestrDate)
+	// DoGetAccounts(filestrDate)
+
+	fmt.Println(">> Wait Until Process Done.\nPress Ctrl+C for Stop.")
+
+	// fmt.Println()
+	done := make(chan os.Signal, 1)
+	signal.Notify(done, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)
+
+	<-done
+	log.Println("All server stopped!")
 }

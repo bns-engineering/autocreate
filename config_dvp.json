@@ -1,0 +1,9 @@
+{
+  "debug": true ,
+  "mambu": {
+    "endpoint": "https://nebdvp.sandbox.mambu.com",
+    "authorization": "Basic ZmVyeTp0ZWxsbWVmNm5vMTA="
+  },
+  "start":1,
+  "until": 1
+}
